@@ -1,6 +1,7 @@
 **# 安装依赖 #**
 
 > pip install -r requirements.txt
+
 ####安装 Opensmile
 ##
 **# 配置参数 #*
