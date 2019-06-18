@@ -6,8 +6,8 @@
 ##
 **# 配置参数 #*
 
-####在config.py中配置参数
-> config.py
+####在Config.py中配置参数
+> Config.py
 ##
 **# 实现效果 #**
 
