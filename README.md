@@ -4,7 +4,7 @@
 
 ####安装 Opensmile
 ##
-**# 配置参数 #*
+**# 配置参数 #**
 
 ####在Config.py中配置参数
 > Config.py
