@@ -19,5 +19,5 @@
 ####接收到.wav文件 (命名应为英文，中文不识别），返回情绪以及置信概率
 > 上传了bbb.wav文件作为测试用例 
 ##
-#附图#
+# 附图#
 ![postman测试截图](https://i.imgur.com/SwtchcQ.jpg)
