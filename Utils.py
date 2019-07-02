@@ -6,6 +6,7 @@ from sklearn.externals import joblib
 import librosa
 import librosa.display
 import scipy.io.wavfile as wav
+import os
 
 from Config import Config
 
@@ -24,8 +25,9 @@ def load_model(load_model_name: str, model_name: str):
     
     if(model_name == 'lstm'):
         # 加载json
-        model_path = 'Models/' + load_model_name + '.h5'
-        model_json_path = 'Models/' + load_model_name + '.json'
+        root_path = os.path.dirname(os.path.realpath(__file__))
+        model_path = root_path + '/Models/' + load_model_name + '.h5'
+        model_json_path = root_path + '/Models/' + load_model_name + '.json'
         
         json_file = open(model_json_path, 'r')
         loaded_model_json = json_file.read()

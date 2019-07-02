@@ -6,7 +6,7 @@ app = Flask(__name__)
 import os
 from werkzeug.utils import secure_filename
 from Utils import load_model, Radar
-UPLOAD_FOLDER = 'uploads'
+UPLOAD_FOLDER = os.path.dirname(os.path.realpath(__file__)) + '/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/predict',methods=['GET','POST'])
