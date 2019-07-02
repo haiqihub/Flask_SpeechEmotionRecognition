@@ -88,7 +88,7 @@ def extract_features(file, pad = False):
         length = (max_ * sample_rate) - X.shape[0]
         X = np.pad(X, (0, int(length)), 'constant')
     return features(X, sample_rate)
-    
+
 
 def get_max_min(files):
 
@@ -161,19 +161,19 @@ def load_feature(feature_path: str, train: bool):
     Y = list(features['emotion'])
 
     if train == True:
-        # 标准化数据 
+        # 标准化数据
         scaler = StandardScaler().fit(X)
         # 保存标准化模型
-        joblib.dump(scaler, Config.MODEL_PATH + 'SCALER_LIBROSA.m')
+        joblib.dump(scaler, os.path.join(Config.MODEL_PATH, 'SCALER_LIBROSA.m'))
         X = scaler.transform(X)
 
         x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, random_state = 42)
         return x_train, x_test, y_train, y_test
-    
+
     else:
         # 标准化数据
         # 加载标准化模型
-        scaler = joblib.load(Config.MODEL_PATH + 'SCALER_LIBROSA.m')
+        scaler = joblib.load(os.path.join(Config.MODEL_PATH, 'SCALER_LIBROSA.m'))
         X = scaler.transform(X)
         return X
 
@@ -194,7 +194,7 @@ get_data():
         预测数据特征
 '''
 def get_data(data_path: str, feature_path: str, train: bool):
-    
+
     if(train == True):
         files = get_data_path(data_path)
         max_, min_ = get_max_min(files)
@@ -213,5 +213,5 @@ def get_data(data_path: str, feature_path: str, train: bool):
     cols = ['file_name', 'features', 'emotion']
     mfcc_pd = pd.DataFrame(data = mfcc_data, columns = cols)
     pickle.dump(mfcc_data, open(feature_path, 'wb'))
-    
+
     return load_feature(feature_path, train = train)

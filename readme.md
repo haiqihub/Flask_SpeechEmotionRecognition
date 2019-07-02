@@ -2,6 +2,8 @@
 
 > pip install -r requirements.txt
 
+> conda install -c conda-forge ffmpeg
+
 安装 Opensmile
 ##
 # 配置参数 #

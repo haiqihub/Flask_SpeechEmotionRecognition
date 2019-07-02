@@ -27,7 +27,7 @@ class Config:
     }
 
     # 特征存储路径
-    FEATURE_PATH = os.path.dirname(os.path.realpath(__file__)) + '/Features/'
+    FEATURE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'Features')
     # 训练特征存储路径（Opensmile）
     TRAIN_FEATURE_PATH_OPENSMILE = FEATURE_PATH + 'train_opensmile.csv'
     # 预测特征存储路径（Opensmile）
@@ -35,7 +35,7 @@ class Config:
     # 训练特征存储路径（librosa）
     TRAIN_FEATURE_PATH_LIBROSA = FEATURE_PATH + 'train_librosa.p'
     # 预测特征存储路径（librosa）
-    PREDICT_FEATURE_PATH_LIBROSA = FEATURE_PATH + 'test_librosa.p'
+    PREDICT_FEATURE_PATH_LIBROSA = os.path.join(FEATURE_PATH, 'test_librosa.p')
 
     # 模型存储路径
-    MODEL_PATH = os.path.dirname(os.path.realpath(__file__)) + '/Models/'
+    MODEL_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'Models')
