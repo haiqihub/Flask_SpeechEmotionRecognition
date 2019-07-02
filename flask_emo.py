@@ -4,12 +4,13 @@ import keras
 from flask import Flask, jsonify, abort, request, make_response, url_for,redirect, render_template
 app = Flask(__name__)
 import os
+import json
 from werkzeug.utils import secure_filename
 from Utils import load_model, Radar
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-@app.route('/predict',methods=['GET','POST'])
+@app.route('/predict',methods=['POST'])
 def upload_file():
     if request.method == 'POST' or request.method == 'GET':
         print(request.method)
@@ -42,8 +43,6 @@ def upload_file():
                         "surprise":prob[5].tolist()
                     }
                     }
-            return jsonify(result)
-
-
+            return jsonify(json.dumps(result))
 if __name__ == '__main__':
     app.run(debug=True)
