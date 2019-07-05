@@ -21,7 +21,7 @@ windows如果提示no backend error，需要安装对应的音频解析工具。
 ## 4. postman测试
 一个测试文件test.wav已经放置于uploads文件夹下。(命名应为英文，中文不识别）
 
-![postman测试截图](https://i.imgur.com/SwtchcQ.jpg)
+![postman测试截图](doc/postman.jpg)
 
 推荐使用16kHz采样率、单声道的.wav格式声音文件进行测试。
 
