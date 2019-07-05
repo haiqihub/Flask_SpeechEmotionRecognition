@@ -1,25 +1,30 @@
-# 安装依赖 #
+## 1. 项目描述
+
+本项目基于python的flask框架，作为程序后端，实现基于深度学习的语音情绪分析功能。
+
+前端地址：[前端](https://github.com/XLab-Tongji/sentimentAnalysisFrontend)
+
+## 2. 安装依赖
 
 > pip install -r requirements.txt
 
+mac下直接运行上述命令即可。
+
+windows如果提示no backend error，需要安装对应的音频解析工具。
 > conda install -c conda-forge ffmpeg
 
-安装 Opensmile
-##
-# 配置参数 #
 
-在Config.py中配置参数（点开会自动提醒需要安装的包）
-> Config.py
-##
-# 启动方法 #
-在pycharm中装入文件，运行flask_emo.py文件，在出现链接后，打开postman，进行测试。
->  附postman测试图片在文末
+## 3. 启动方法
 
-##
-# 实现效果 #
+在Pycharm中打开项目，运行flask_emo.py文件，启动后端。
 
-从uploads文件夹中接收到.wav文件 (命名应为英文，中文不识别），返回情绪以及置信概率
-> 上传了bbb.wav文件作为测试用例 
-##
-# 附图 #
+## 4. postman测试
+一个测试文件test.wav已经放置于uploads文件夹下。(命名应为英文，中文不识别）
+
 ![postman测试截图](https://i.imgur.com/SwtchcQ.jpg)
+
+推荐使用16kHz采样率、单声道的.wav格式声音文件进行测试。
+
+
+
+
