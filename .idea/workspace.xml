@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003f41ac-2ff2-438f-84b8-88973f49354b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Features/test_librosa.p" afterPath="$PROJECT_DIR$/Features/test_librosa.p" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bbb.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/201.peak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/201.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/202.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/203.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/204.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/blob" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Librosa_Feature.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Librosa_Feature.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Librosa_Feature.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
@@ -38,6 +44,16 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-150">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -694,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SER.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -828,6 +837,14 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
